@@ -1,17 +1,13 @@
-#!/usr/bin/env python
-
 import subprocess
 import os
+
+# constants
 ORIGINAL_DIR = os.curdir
 MCPARFACE_DIR = '/Users/ranxiao/Desktop/models/syntaxnet'
 WORD = 1
 WORDTYPE = 4
-EXAMPLE = 'Mr. Sessions also said he would recuse himself from any lingering investigations involving Hillary Clinton or \
-her family’s foundation. During Mr. Trump’s campaign, “lock her up” was a Republican rallying cry. Mr. Sessions \
-previously supported appointing a special prosecutor to investigate her. The F.B.I.’s investigation into \
-Mrs. Clinton’s use of a private email server is closed. And while a preliminary investigation into the \
-Clinton Foundation is open, senior career officials at the F.B.I. and Justice Department have said \
-there is little basis for the case to move forward.'
+EXAMPLE = 'Mr. Sessions also said he would recuse himself from any lingering investigations involving Hillary Clinton or her family’s foundation. During Mr. Trump’s campaign, “lock her up” was a Republican rallying cry. Mr. Sessions previously supported appointing a special prosecutor to investigate her. The F.B.I.’s investigation into Mrs. Clinton’s use of a private email server is closed. And while a preliminary investigation into the Clinton Foundation is open, senior career officials at the F.B.I. and Justice Department have said there is little basis for the case to move forward.'
+
 
 def pos_tag(text, verbose=False):
     """
